@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>网页涂鸦</title>
+	</head>
+	<body>
+		<center>
+			<canvas id="cavsElem">
+				你的浏览器不支持canvas 请升级浏览器
+			</canvas>
+		</center>
+		<script>
+			(function() {
+				var canvas = document.getElementById('cavsElem');
+				var context = canvas.getContext('2d')
+				canvas.width = 900;
+				canvas.height = 600;
+				canvas.style.border = "1px solid #000"
+				canvas.onmousedown = function(e) {
+					var x = e.clientX - canvas.getBoundingClientRect().left;
+					var y = e.clientY - canvas.getBoundingClientRect().top;
+					context.beginPath();
+					context.moveTo(x,y);
+					canvas.onmousemove = function(event) {
+						var x = event.clientX - canvas.getBoundingClientRect().left;
+						var y = event.clientY - canvas.getBoundingClientRect().top;
+						context.lineTo(x,y);
+						context.stroke();
+					}
+					canvas.onmouseup = function(event) {
+						canvas.onmousemove = null;
+					}
+				}
+			}());
+		</script>
+	</body>
+</html>

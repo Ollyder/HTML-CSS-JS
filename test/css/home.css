@@ -1,0 +1,51 @@
+body{
+	font-family: "微软雅黑";
+	color: white;
+	text-align: center;
+}
+
+.title{
+	position: relative;
+	top: 35px;
+	left: 0;
+	width: 100%;
+	height: 140px;
+	font-weight:bolder ;
+	font-size: 100px;
+	/*padding: 100px;*/
+	
+}
+
+.say{
+	position: relative;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.speak{
+	margin: 5px;
+	font-size: 20px;
+}
+
+.icon{
+	text-align: center;
+	margin-top: 60px;
+}
+
+.icon .tu{
+	float: left;
+	display: block;
+	box-sizing: border-box;
+	/*margin-left: 10px;*/
+	/*margin-right: 10px;*/
+	width: 25%;
+	font-size: 35px;
+	/*padding: 0px;*/
+}
+
+h5{
+	padding: 0;
+	margin: 0;
+}

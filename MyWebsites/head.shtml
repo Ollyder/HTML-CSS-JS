@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+	</head>
+	<body>
+		<div class="head-title">
+			<a href="http://www.ollyderdong.top">
+				<div class="title-block">
+					<i class="fa fa-home"></i>主页
+				</div>
+			</a>
+			
+			<a href="https://github.com/Ollyder">
+				<div class="title-block">
+				<i class="fa fa-github"></i>作品
+				</div>
+			</a>
+			
+			<a href="http://ollyderdong.top:9000/blog/ollyder"> 
+				<div class="title-block">
+				<i class="fa fa-send-o"></i>博客
+					
+				</div>
+			</a>
+			
+			<!--<div class="title-block">
+				<i class="fa fa-comment-o"></i>社交
+			</div>-->
+			
+			<div class="title-block">
+				<i class="fa fa-info"></i>关于
+			</div>
+		</div>
+	</body>
+</html>
